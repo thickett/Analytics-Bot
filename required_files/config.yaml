@@ -1,0 +1,17 @@
+openAI:
+  api_key: "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"
+DB:
+  BikeStore:
+    uri: "mssql+pyodbc://sa:reallyStrongPwd123@localhost:1433/BikeStores?driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=yes"
+    schemas:
+      production:
+        - brands
+        - categories
+        - products
+        - stocks
+      sales:
+        - customers
+        - order_items
+        - orders
+        - staffs
+        - stores
